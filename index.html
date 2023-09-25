@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sample</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: monospace;               
+        }
+        header {
+            background-color: #5c5b5b;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container, .left, .main_content, .right, nav, footer{
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid transparent;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+            height: 79vh; 
+        }
+
+        .left {
+            font-size: large;
+            float: left;
+            width: 70%;
+            padding: 20px;
+
+        }
+
+        .right {
+            font-size: large;
+            float: left;
+            width: 70%;
+            padding: 20px;
+
+        }
+
+        .nav, footer{
+            background-color: rgb(82, 82, 82);
+        }
+        .main_content{
+            background-color: none;
+        }
+
+        footer {
+            clear: both;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 8px 0;
+        }
+        hr{
+            border: none;
+        }
+
+    </style>
+</head>
+<body background="back.jpg" height="100px" width="100px">
+
+    <header>
+        <h1>My Profile</h1>
+    </header>
+    
+    <div class="container">
+        <div class="left">
+            <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-6/293472908_736802657545330_6618063702107885302_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=1b51e3&_nc_eui2=AeGHNp1Uqg0DuNeVFHqgB2hDMgGgjgrMwmwyAaCOCszCbAN9lnPaH2F0LPcslHjfeswBb0C85iDTVA_MjgCKVju3&_nc_ohc=smiWHXX8jZAAX_Qt1Zu&_nc_ht=scontent.fceb1-3.fna&oh=00_AfCJhITjo5RtuMuzTGF_G9YKY8MxHjznbINIvKITxoqnhw&oe=650D7E88" width="120" height="120">
+            <hr size="20">
+            <h1 style="font-size:larger">Name: <hr color="white"></h1>
+            <h2 style="font-size: medium;"> Charles Kenneth  Pepito</h2>
+            <hr size=" 10"">
+            <h3 style="font-size: larger">Birthday</h3>
+            <h4 style="font-size: medium">July 13, 2003</h4>
+            <hr size=" 10">
+            <h5 style="font-size: larger">Sex</h5>
+            <h6 style="font-size: medium">Male</h6>
+            <hr size=" 10">
+            <h7 style="font-size: larger">Contact No.</h7>
+            <h8 style="font-size: medium">09061883598</h8>
+        </div>
+
+        <main class="main_content">
+            <hr size="10">
+            <h2 style="font-size:xx-large;">Welcome to My Profile</h2>
+            <hr size="5">
+            <p style="font-size: large;">I am Charles Kenneth Pepito, 20 years old from Barangay Tagukon, Kabankalan City, Negros Occidental</p>
+            <hr size="40">
+    
+            <h3 style="font-size:x-large;">About Me</h3>
+            <hr size="3">
+            <p style="font-size: medium;">I am a passionate individual with a strong interest in web development. I love creating websites and web applications that are both functional and visually appealing.</p>
+            <hr size="10">
+            <p style="font-size: medium;">Technology Enthusiast: From a young age, I've been captivated by the world of technology. My fascination with computers, software, and how they shape our daily lives led me to pursue a degree in Information Technology.</p>
+            <hr size="10">
+            <p style="font-size: medium;">Constant Learner: In the ever-evolving field of IT, I thrive on continuous learning. Whether it's coding, cybersecurity, networking, or database management, I'm always eager to acquire new skills and stay up-to-date with the latest trends.</p>
+            <hr size="50">
+
+            <h3 style="font-size: x-large;">My Projects</h3>
+            <ul>
+                <li><a href="#">Example project 1</a></li>
+                <li><a href="#">Example project 2</a></li>
+                <li><a href="#">Example project 3</a></li>
+                <hr size="50">
+            </ul>
+    
+            <h3 style="font-size:x-large;">Contact:</h3>
+            <p>You can reach me at my gmail kianekenneth13@gmai.com</p>
+        </main>
+
+        <div class="right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <h1>2023 My profile</h1>
+    </footer>
+</body>
+</html>
